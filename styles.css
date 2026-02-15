@@ -1,0 +1,213 @@
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+}
+input[type="text"] {
+    height: 35px;
+    color: whitesmoke;
+    border: none;
+    border-radius: 20px;
+    width: 34vw;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #3A3238;
+}
+.setting, .reload, .brightness, .menu_toggle {
+    height: 35px;
+    width: 35px;
+    color: whitesmoke;
+    background-color: #3A3238;
+    border: none;
+    border-radius: 50%;
+    margin-left: 10px;
+    transition-duration: 0.15s;
+}
+
+ .top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6e4555;
+}
+.google_form {
+    display: inline;
+}
+.side-bar {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    height: 100%;
+    width: 15vw;
+    background-color: #3A3238;
+    padding: 20px 0;
+}
+.options {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    list-style: none;
+}
+.nav_link {
+    color: whitesmoke;
+    text-decoration: none;
+    width: 100%;
+    background-color: #6E4555;
+    margin: 4px 0px;
+    border: none;
+    border-radius: 15px;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    transition-duration: 0.15s;
+}
+.nav_link:hover {
+    background-color: #D282A6;
+    transform: scale(1.3);
+    
+}
+.playlist {
+    text-align: center;
+    position: fixed;
+    left: 15vw;
+    top: 50px;
+    z-index: 0;
+    overflow-y: auto;
+    height: 100%;
+    width: 70vw;
+    background-color: #A3B087;
+}
+.music {
+    height: 100px;
+    width: 100%;
+    background-color: #D282A6;
+    border: 2px solid grey;
+}
+.soundcloud_iframe {
+    width: 100%;
+    height: 100%;
+}
+.now-playing {
+    position: fixed;
+    top : 0; 
+    right: 0; 
+    height: 100%;
+    width: 15vw;
+    margin-top: 50px; 
+    background-color: #3A3238;
+}
+
+
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #6E4555;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+}
+/* home */
+.library-content, .help-main-content {
+    position: fixed;
+    top: 50px;
+    left: 15vw;
+    width: 85vw;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    background-color: #D282A6;
+}
+.card {
+    width: 200px;
+    height: 350px;
+    background-color: #6E4555;
+    margin: 20px;
+    display: inline-block;
+    color: whitesmoke;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+}
+.card h2 {
+    font-size: 18px;
+    padding: 10px;
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+.card h2 {
+    margin-top: 10px;
+    display: inline-block;
+}
+.artist_link {
+    color: whitesmoke;
+    text-decoration: none;
+}
+.card:hover {
+    width: 200px;
+    height: 350px;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: #313647 15px 15px 10px;
+    transform: scale(1.1);
+}
+@media (max-width:480px) {
+    .setting, .reload, .brightness {
+        display: none;
+    } 
+    .input[type="text"] {
+        width: 290px;
+    }
+    .now-playing {
+        display: none;
+    }
+    .side-bar {
+        top: 50px;
+        width: 100%;
+        height: 30px;
+        padding: 0;
+        line-height: 25px;
+    }
+    .options {
+        margin: 0;
+    }
+    .options li, .nav_link {
+        width: 100%;
+        display: inline;
+        margin:0;
+    }
+    .nav_link {
+        border-radius: 5px;
+        padding: 1px 4px;
+        margin: 50% 5px;
+    }
+    .playlist {
+        left: 0;
+        top: 80px;
+        width: 100%;
+    }
+    /* nav bar */
+    .library-content, .help-main-content {
+        left: 0;
+        top: 80px;
+        width: 100%;
+    }
+    .card {
+        width: 150px;
+        height: 300px;
+    }
+
+}
