@@ -78,6 +78,7 @@ input[type="text"] {
     top: 50px;
     z-index: 0;
     overflow-y: auto;
+    overflow-x: hidden;
     height: 100%;
     width: 70vw;
     background-color: #A3B087;
